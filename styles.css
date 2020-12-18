@@ -1,0 +1,408 @@
+/* Сброс стилей браузера НЧ */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup,
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Сброс стилей браузера КЦ */
+
+/*header, div, a, img, body, p {
+  border: solid 3px;
+}*/
+
+/* Общие стили страницы НЧ */
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sideBar {
+  position: fixed;
+  width: 220px;
+  max-height: 768px;
+  margin-left: 5px;
+}
+
+.main {
+  float: left;
+  margin-left: 240px;
+  border-left: 1px solid #999;
+  padding-top: 10px;
+}
+
+p {
+  font: 1.3em Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 15px 30px;
+}
+
+li {
+  font: 1.3em Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: rgba(0, 225, 255, 1);
+  text-shadow: 1px 0 1px #000,
+               0 1px 1px #000,
+               -1px 0 1px #000,
+               0 -1px 1px #000;
+}
+
+h3 {
+   font-size: 1.5em;
+}
+
+.description, .longText, .examples, .prices {
+  margin-top: 8px;
+}
+
+hr {
+  width: 90%;
+  height: 10px;
+  border: none;
+  border-top: 1px solid rgb(0, 225, 255);
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+/* Общие стили страницы КЦ */
+
+/* Логотип НЧ */
+.sideBar img {
+  margin: 5px 0 0 23%;
+  width: 60%;
+}
+/* Логотип КЦ */
+
+/* Контакты НЧ */
+/*.contacts img {
+  width: 24px;
+  border-radius: 5px;
+  margin: 5px 7px -10px;
+  padding: 10px 0 10px;
+}*/
+
+.contacts a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font: 1.3em Arial, Helvetica, sans-serif;
+  text-align: left;
+  line-height: 1.5em;
+  padding-left: 30px;
+}
+
+.contacts a:hover {
+  color: rgba(0, 225, 255, 1);
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+a.phone {
+  background: url(images/phone1.png) no-repeat 0% 50%;
+  background-size: 23px;
+}
+
+a.insta {
+  background: url(images/insta1.jpg) no-repeat 0% 80%;
+  background-size: 23px;
+}
+
+a.whatsapp {
+  background: url(images/whatsApp1.png) no-repeat 0% 60%;
+  background-size: 23px;
+}
+
+a.viber {
+  background: url(images/viber1.jpg) no-repeat 0% 60%;
+  background-size: 23px;
+}
+/* Контакты КЦ */
+
+/* Якоря НЧ */
+.anchors a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font: 1.1em Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin: 0 0 3px 10px;
+  background: url('images/cursor.jpg') no-repeat left top;
+  background-size: 17px;
+  white-space: pre-wrap;
+  padding-left: 25px;
+}
+
+.anchors a:hover {
+  color: rgba(0, 225, 255, 1);
+  transform: scale(1.05);
+  transition: .2s;
+}
+/* Якоря КЦ */
+
+/* Верхний слоган НЧ */
+.description p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@keyframes sizeFluct {
+  from {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(111, 144, 144, 1);
+  }
+  to {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(111, 144, 144, 1);
+  }
+}
+
+.description h1 {
+  margin-left: 14%;
+  width: 72%;
+  border-radius: 15px;
+  padding-bottom: 5px;
+  background: rgba(0, 225, 255, 1);
+  color: white;
+/*  box-shadow: 0 0 8px rgba(0, 255, 221, 1);*/
+  text-shadow: 1px 0 1px #777,
+               0 1px 1px #777,
+               -1px 0 1px #777,
+               0 -1px 1px #777;
+  animation-name: sizeFluct;
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/* Верхний слоган КЦ */
+
+div.longText, div.examples, div.prices, div.feedbacks {
+/*  border-top: 1px solid #999; */
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+img[src*="sofa2"] {
+  width: 100%;
+}
+
+/* Примеры наших работ НЧ */
+.biggerExamples {
+  padding-left: 10px;
+  display: grid; /* Объявление grid-формата */
+  grid-template-columns: 1fr 1fr 1fr; /* Выделение трех равных долей для внутренних div'ов */
+  grid-gap: 10px; /* Промежутки между внутренними div'ами */
+}
+
+.smallerExamples {
+  padding-left: 20px;
+  display: grid; /* Объявление grid-формата */
+  grid-template-columns: 1fr 1fr 1fr; /* Выделение трех равных долей для внутренних div'ов */
+  grid-gap: 20px; /* Промежутки между внутренними div'ами */
+}
+
+.examples img {
+  width: 100%;
+  border: 1px solid #bbb;
+}
+
+.examples img:hover {
+  transform: scale(2.3);
+  transition: .7s;
+  cursor: pointer;
+}
+
+.examples p {
+  font-size: 1em;
+}
+/* Примеры наших работы КЦ */
+
+/* Наши цены НЧ */
+.prices ul {
+  margin-left: 37%;
+  line-height: 2em;
+}
+
+.prices li {
+  background: url('images/moydodyr64.jpg') no-repeat left top;
+  background-size: 3.5%;
+  padding: 0 0 10px 30px;
+  list-style: none;
+  line-height: 2em;
+}
+/* Наши цены КЦ */
+
+/* Отзывы наших клиентов НЧ */
+.fbWrapper {
+  padding-left: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.fbWrapper img {
+  width: 100%;
+  border: 1px solid rgb(0, 225, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 8px #999;
+}
+
+.fbWrapper img:hover {
+  transform: scale(2.2);
+  transition: .7s;
+  cursor: pointer;
+}
+/* Отзывы наших клиентов КЦ */
+
+.question {
+  font-weight: 700;
+}
+
+.FAQ p{
+  margin: 0 30px 0 15px;
+}
+
+/* Адаптивная верстка НЧ */
+@media (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  .sideBar {
+    position: static;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo {
+    margin-left: .7%;
+  }
+
+  .contacts {
+    margin: 15px 1% 0 1%;
+  }
+
+  .contacts a {
+    text-decoration: underline;
+  }
+
+  .contacts a:hover {
+    color: #000;
+    transform: none;
+  }
+
+  .anchors {
+    display: none;
+  }
+
+  .main {
+    position: static;
+    margin-left: 0;
+    border: none;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .sideBar hr {
+    display: none;
+  }
+
+  .description h1 {
+    animation: none;
+  }
+
+  /* Примеры наших работ НЧ */
+  .biggerExamples {
+    padding-left: 0;
+    display: block;
+    margin: 0 2% 0 2%;
+  }
+
+  .smallerExamples {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7px;
+    margin: 0 2% 0 2%;
+  }
+
+  .examples img {
+    border: 1px solid #666; /*Боллее темная граница*/
+  }
+
+  .examples img:hover {
+    transform: none;
+    cursor: auto;
+  }
+/* Примеры наших работы КЦ */
+/* Наши цены НЧ */
+  .prices ul {
+    margin-left: 18%;
+  }
+
+  .prices li {
+    background-size: 5.3%;
+    padding: 0 0 10px 30px;
+    line-height: 1.1em;
+  }
+  /* Наши цены КЦ */
+  /* Отзывы наших клиентов НЧ */
+  .fbWrapper {
+    padding-left: 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .fbWrapper img:hover {
+    transform: none;
+    cursor: auto;
+  }
+
+  img[src*="9"], img[src*="10"] {
+    display: none;
+  }
+/* Отзывы наших клиентов КЦ */
+/* Адаптивная верстка КЦ */
